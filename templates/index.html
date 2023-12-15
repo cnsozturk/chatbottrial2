@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cansu Ozturk's Website</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Cansu Ozturk</h1>
+        <p>Data Visualization Expert</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>Insert a brief description of yourself here.</p>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Data Analysis</li>
+                <li>Data Visualization</li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>Email: cansu.ozturk@example.com</p>
+            <!-- Add more contact information as needed -->
+        </section>
+    <h1> Chat with me</h1>
+    <form method ="post" action="{{url_for('chatbot')}}">
+        <label for="message">Message: </label>
+        <input type="text" id = "message" name = "message" required>
+        <button type="submit"> Send </button>
+    </form>
+
+    
+    
+
+
+
+    <footer>
+        &copy; 2023 Cansu Ozturk | ozturkcansu.com
+    </footer>
+
+</body>
+</html>
